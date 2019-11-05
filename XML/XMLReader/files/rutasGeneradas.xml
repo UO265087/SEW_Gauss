@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rutas>
+    <ruta>
+        <bibliografia>
+            <referencia>https://es.wikipedia.org/wiki/Sama</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Laviana_(concejo)</referencia>
+            <referencia>https://es.wikipedia.org/wiki/El_Entrego</referencia>
+        </bibliografia>
+        <calleInicio>Estacion de Autobuses</calleInicio>
+        <coordenada>
+            <altitud>5.0</altitud>
+            <latitud>43.303328</latitud>
+            <longitud>-5.691218</longitud>
+        </coordenada>
+        <descripcion>Ruta en la que se podran degustar las diferentes comidas de la cuenca del nalon parte de gozar de los preciosos paisajes de las montañas que la rodean</descripcion>
+        <duracion>7 horas</duracion>
+        <fecha>11 de cada mes</fecha>
+        <hitos>
+            <hito>
+                <coordenada>
+                    <altitud>155.0</altitud>
+                    <latitud>43.295387</latitud>
+                    <longitud>-5.681422</longitud>
+                </coordenada>
+                <descripcion>Parque de sama que es bastante bonito y pequeño</descripcion>
+                <distancia>0.0</distancia>
+                <galeria>http://lacuencadelnalon.es/web/wp-content/uploads/2018/01/parque-dorado_89.jpg</galeria>
+                <sitio>Parque Dorado</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>227.0</altitud>
+                    <latitud>43.287829</latitud>
+                    <longitud>-5.650454</longitud>
+                </coordenada>
+                <descripcion>Un museo en el que podras ver cantidad de maquinaria usada en la mineria e industria que tanto se explotó en Asturias y ver como eran las minas</descripcion>
+                <distancia>2.9</distancia>
+                <galeria></galeria>
+                <sitio>Museo de la mineria y de la industria</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>355.0</altitud>
+                    <latitud>43.233926</latitud>
+                    <longitud>-5.496153</longitud>
+                </coordenada>
+                <descripcion>Lugar para contemplar el rio Nalón</descripcion>
+                <distancia>16.1</distancia>
+                <galeria></galeria>
+                <sitio>Area Recreativa El Barrillon</sitio>
+            </hito>
+        </hitos>
+        <hora/>
+        <lugarInicio>La Felguera</lugarInicio>
+        <nombre>Ruta por cuenca del Nalón</nombre>
+        <personasAdecuadas>Se puede traer a quien quiera pues la ruta es en coche y no hace falta caminar</personasAdecuadas>
+        <recomendacion>8</recomendacion>
+        <tipo>Gastronómica</tipo>
+        <transporte>Coche</transporte>
+    </ruta>
+    <ruta>
+        <bibliografia>
+            <referencia>http://www.museojurasicoasturias.com/</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Museo_del_Jur%C3%A1sico_de_Asturias</referencia>
+            <referencia>https://www.asturnatura.com/naturaleza/la-costa-de-los-dinosaurios-los-yacimientos-de-icnitas.html
+            </referencia>
+        </bibliografia>
+        <calleInicio>Aparcamiento del museo</calleInicio>
+        <coordenada>
+            <altitud>163.0</altitud>
+            <latitud>-5.273975</latitud>
+            <longitud>43.501351</longitud>
+        </coordenada>
+        <descripcion>Primero se visitara el museo para posteriormente ir andando a la playa cercana con un guia que ira
+            explicando datos relativos a la epoca de los dinosaurios en Asturias
+        </descripcion>
+        <duracion>3 horas</duracion>
+        <fecha>20 de cada mes</fecha>
+        <hitos>
+            <hito>
+                <coordenada>
+                    <altitud>163.0</altitud>
+                    <latitud>-5.273975</latitud>
+                    <longitud>43.501351</longitud>
+                </coordenada>
+                <descripcion>Museo donde se comienza la ruta</descripcion>
+                <distancia>0.0</distancia>
+                <galeria>https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/MUJA_01.jpg/275px-MUJA_01.jpg</galeria>
+                <sitio>Museo Muja</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>4.0</altitud>
+                    <latitud>-5.261519</latitud>
+                    <longitud>43.501543</longitud>
+                </coordenada>
+                <descripcion>Playa en la que se encuentran indicios de que hubo dinosaurios</descripcion>
+                <distancia>2.4</distancia>
+                <galeria></galeria>
+                <sitio>Playa de la griega</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>4.0</altitud>
+                    <latitud>-5.255353</latitud>
+                    <longitud>43.500468</longitud>
+                </coordenada>
+                <descripcion>Zona Exacta donde se encuentran Icnitas de Dinosaurios</descripcion>
+                <distancia>0.4</distancia>
+                <galeria></galeria>
+                <sitio>Icnitas de Dinosaurios</sitio>
+            </hito>
+        </hitos>
+        <hora/>
+        <lugarInicio>Museo Muja</lugarInicio>
+        <nombre>Ruta De Dinosaurios</nombre>
+        <personasAdecuadas>Se recomienda ir solo gente que este acostumbrada a andar dado que se andara bastante</personasAdecuadas>
+        <recomendacion>9</recomendacion>
+        <tipo>Historica</tipo>
+        <transporte>Andando</transporte>
+    </ruta>
+    <ruta>
+        <bibliografia>
+            <referencia>https://es.wikipedia.org/wiki/Barcelona</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Zaragoza</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Madrid</referencia>
+        </bibliografia>
+        <calleInicio>Estacion de Autobuses</calleInicio>
+        <coordenada>
+            <altitud>25.0</altitud>
+            <latitud>2.182791</latitud>
+            <longitud>41.39469</longitud>
+        </coordenada>
+        <descripcion>Ruta en la que se va de Barcelona a madrid pasando por lugares que sean agradables a la vista.
+        </descripcion>
+        <duracion>10 horas</duracion>
+        <fecha>15 deFebrero de 2019</fecha>
+        <hitos>
+            <hito>
+                <coordenada>
+                    <altitud>29.0</altitud>
+                    <latitud>2.173828</latitud>
+                    <longitud>41.403972</longitud>
+                </coordenada>
+                <descripcion>Gran monumento muy tipico de Barcelona</descripcion>
+                <distancia>0.0</distancia>
+                <galeria>http://www.sagradafamilia.org/wp-content/uploads/2015/12/historia-2017-453x326.jpg</galeria>
+                <sitio>Basilica de la Sagrada Familia</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>500.0</altitud>
+                    <latitud>-3.106958</latitud>
+                    <longitud>41.793593</longitud>
+                </coordenada>
+                <descripcion>Un parque natural muy verde y tranquilo</descripcion>
+                <distancia>510.0</distancia>
+                <galeria></galeria>
+                <sitio>Parque Natural Cañon del Rio Lobos</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>600.0</altitud>
+                    <latitud>-3.759671</latitud>
+                    <longitud>40.407444</longitud>
+                </coordenada>
+                <descripcion>Un zoo y aquuario en el mismo lugar</descripcion>
+                <distancia>213.0</distancia>
+                <galeria>https://media-cdn.tripadvisor.com/media/photo-s/0b/22/4b/07/zoo-aquarium-de-madrid.jpg</galeria>
+                <sitio>Zoo Aquarium de Madrid</sitio>
+            </hito>
+        </hitos>
+        <hora/>
+        <lugarInicio>Barcelona</lugarInicio>
+        <nombre>Ruta Barcelona Madrid</nombre>
+        <personasAdecuadas>Cualquier compañia es buena dado que se va en autobus y no hace falta caminar casi nada</personasAdecuadas>
+        <recomendacion>6</recomendacion>
+        <tipo>Paisajistica</tipo>
+        <transporte>Autobus</transporte>
+    </ruta>
+    <ruta>
+        <bibliografia>
+            <referencia>https://es.wikipedia.org/wiki/Florencia</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Roma</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Ciudad_del_Vaticano</referencia>
+        </bibliografia>
+        <calleInicio>Mercato di San Lorenzo</calleInicio>
+        <coordenada>
+            <altitud>230.0</altitud>
+            <latitud>11.256041</latitud>
+            <longitud>43.775073</longitud>
+        </coordenada>
+        <descripcion>Ruta para disfrutar de tanto la cultura italiana como de sus paisajes y comidas.</descripcion>
+        <duracion>12 horas</duracion>
+        <fecha>20 de Agossto de 2019</fecha>
+        <hitos>
+            <hito>
+                <coordenada>
+                    <altitud>230.0</altitud>
+                    <latitud>11.256041</latitud>
+                    <longitud>43.775073</longitud>
+                </coordenada>
+                <descripcion>Palacio de los Medici que fueron tan importantes para la edad media en Florencia</descripcion>
+                <distancia>0.0</distancia>
+                <galeria>
+                    https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Palazzo_Medici_Riccardi_by_night_01.JPG/250px-Palazzo_Medici_Riccardi_by_night_01.JPG
+                </galeria>
+                <sitio>Palazzo Mediici Riccardi</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>400.0</altitud>
+                    <latitud>12.467023</latitud>
+                    <longitud>41.903022</longitud>
+                </coordenada>
+                <descripcion>Castillo del siglo 2 con cuadros renacentistas</descripcion>
+                <distancia>284.0</distancia>
+                <galeria></galeria>
+                <sitio>Castel Sant´Angelo</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>370.0</altitud>
+                    <latitud>12.457193</latitud>
+                    <longitud>41.902137</longitud>
+                </coordenada>
+                <descripcion>Plaza que se encuentra en la cCudad del Vaticano</descripcion>
+                <distancia>0.8</distancia>
+                <galeria>https://www.101viajes.com/sites/default/files/plaza-san-pedro.jpg</galeria>
+                <sitio>Piazza San Pietro</sitio>
+            </hito>
+        </hitos>
+        <hora/>
+        <lugarInicio>Florencia</lugarInicio>
+        <nombre>Ruta Florencia Roma</nombre>
+        <personasAdecuadas>Se caminara cuando s este en ciudades pero los viajes seran en autobus asi que es apto para cualquier
+            persona.
+        </personasAdecuadas>
+        <recomendacion>10</recomendacion>
+        <tipo>Paisajistica</tipo>
+        <transporte>Autobus</transporte>
+    </ruta>
+    <ruta>
+        <bibliografia>
+            <referencia>https://es.wikipedia.org/wiki/Par%C3%ADs</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Berl%C3%ADn</referencia>
+            <referencia>http://www.pnr-lorraine.com/</referencia>
+        </bibliografia>
+        <calleInicio>La torre Eiffel</calleInicio>
+        <coordenada>
+            <altitud>200.0</altitud>
+            <latitud>2.29352</latitud>
+            <longitud>48.858916</longitud>
+        </coordenada>
+        <descripcion>Ruta para ver paisajes de Francia y Alemania</descripcion>
+        <duracion>30 horas</duracion>
+        <fecha>20 de Junio de 2019</fecha>
+        <hitos>
+            <hito>
+                <coordenada>
+                    <altitud>29.0</altitud>
+                    <latitud>2.29352</latitud>
+                    <longitud>48.858916</longitud>
+                </coordenada>
+                <descripcion>Gran monumento muy tipico de Paris</descripcion>
+                <distancia>0.0</distancia>
+                <galeria></galeria>
+                <sitio>La Torre Eiffel</sitio>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>750.0</altitud>
+                    <latitud>13.390271</latitud>
+                    <longitud>52.535383</longitud>
+                </coordenada>
+                <descripcion>Lugar donde se puede ver un poco del muro de Berlin</descripcion>
+                <distancia>733.0</distancia>
+                <galeria></galeria>
+                <sitio>Berlin Wall Memorial</sitio>
+            </hito>
+        </hitos>
+        <hora/>
+        <lugarInicio>Paris</lugarInicio>
+        <nombre>Ruta Paris Berlin</nombre>
+        <personasAdecuadas>Cualquier compañia es buena dado que se va en autobus y no hace falta caminar casi nada</personasAdecuadas>
+        <recomendacion>10</recomendacion>
+        <tipo>Paisajistica</tipo>
+        <transporte>Autobus</transporte>
+    </ruta>
+    <ruta>
+        <descripcion></descripcion>
+        <duracion></duracion>
+        <hitos>
+            <hito>
+                <descripcion></descripcion>
+                <distancia>0.0</distancia>
+            </hito>
+        </hitos>
+        <lugarInicio></lugarInicio>
+        <nombre></nombre>
+    </ruta>
+</rutas>
