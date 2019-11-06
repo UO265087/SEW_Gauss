@@ -23,7 +23,6 @@
                     <longitud>-5.681422</longitud>
                 </coordenada>
                 <descripcion>Parque de sama que es bastante bonito y pequeño</descripcion>
-                <distancia>0.0</distancia>
                 <galeria>http://lacuencadelnalon.es/web/wp-content/uploads/2018/01/parque-dorado_89.jpg</galeria>
                 <sitio>Parque Dorado</sitio>
             </hito>
@@ -34,7 +33,7 @@
                     <longitud>-5.650454</longitud>
                 </coordenada>
                 <descripcion>Un museo en el que podras ver cantidad de maquinaria usada en la mineria e industria que tanto se explotó en Asturias y ver como eran las minas</descripcion>
-                <distancia>2.9</distancia>
+                <distancia unidades="kilometros">2.9</distancia>
                 <galeria></galeria>
                 <sitio>Museo de la mineria y de la industria</sitio>
             </hito>
@@ -45,7 +44,7 @@
                     <longitud>-5.496153</longitud>
                 </coordenada>
                 <descripcion>Lugar para contemplar el rio Nalón</descripcion>
-                <distancia>16.1</distancia>
+                <distancia unidades="kilometros">16.1</distancia>
                 <galeria></galeria>
                 <sitio>Area Recreativa El Barrillon</sitio>
             </hito>
@@ -84,7 +83,6 @@
                     <longitud>43.501351</longitud>
                 </coordenada>
                 <descripcion>Museo donde se comienza la ruta</descripcion>
-                <distancia>0.0</distancia>
                 <galeria>https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/MUJA_01.jpg/275px-MUJA_01.jpg</galeria>
                 <sitio>Museo Muja</sitio>
             </hito>
@@ -95,7 +93,7 @@
                     <longitud>43.501543</longitud>
                 </coordenada>
                 <descripcion>Playa en la que se encuentran indicios de que hubo dinosaurios</descripcion>
-                <distancia>2.4</distancia>
+                <distancia unidades="kilometros">2.4</distancia>
                 <galeria></galeria>
                 <sitio>Playa de la griega</sitio>
             </hito>
@@ -106,7 +104,7 @@
                     <longitud>43.500468</longitud>
                 </coordenada>
                 <descripcion>Zona Exacta donde se encuentran Icnitas de Dinosaurios</descripcion>
-                <distancia>0.4</distancia>
+                <distancia unidades="kilometros">0.4</distancia>
                 <galeria></galeria>
                 <sitio>Icnitas de Dinosaurios</sitio>
             </hito>
@@ -143,7 +141,6 @@
                     <longitud>41.403972</longitud>
                 </coordenada>
                 <descripcion>Gran monumento muy tipico de Barcelona</descripcion>
-                <distancia>0.0</distancia>
                 <galeria>http://www.sagradafamilia.org/wp-content/uploads/2015/12/historia-2017-453x326.jpg</galeria>
                 <sitio>Basilica de la Sagrada Familia</sitio>
             </hito>
@@ -154,7 +151,7 @@
                     <longitud>41.793593</longitud>
                 </coordenada>
                 <descripcion>Un parque natural muy verde y tranquilo</descripcion>
-                <distancia>510.0</distancia>
+                <distancia unidades="kilometros">510.0</distancia>
                 <galeria></galeria>
                 <sitio>Parque Natural Cañon del Rio Lobos</sitio>
             </hito>
@@ -165,7 +162,7 @@
                     <longitud>40.407444</longitud>
                 </coordenada>
                 <descripcion>Un zoo y aquuario en el mismo lugar</descripcion>
-                <distancia>213.0</distancia>
+                <distancia unidades="kilometros">213.0</distancia>
                 <galeria>https://media-cdn.tripadvisor.com/media/photo-s/0b/22/4b/07/zoo-aquarium-de-madrid.jpg</galeria>
                 <sitio>Zoo Aquarium de Madrid</sitio>
             </hito>
@@ -201,7 +198,6 @@
                     <longitud>43.775073</longitud>
                 </coordenada>
                 <descripcion>Palacio de los Medici que fueron tan importantes para la edad media en Florencia</descripcion>
-                <distancia>0.0</distancia>
                 <galeria>
                     https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Palazzo_Medici_Riccardi_by_night_01.JPG/250px-Palazzo_Medici_Riccardi_by_night_01.JPG
                 </galeria>
@@ -214,7 +210,7 @@
                     <longitud>41.903022</longitud>
                 </coordenada>
                 <descripcion>Castillo del siglo 2 con cuadros renacentistas</descripcion>
-                <distancia>284.0</distancia>
+                <distancia unidades="kilometros">284.0</distancia>
                 <galeria></galeria>
                 <sitio>Castel Sant´Angelo</sitio>
             </hito>
@@ -225,7 +221,7 @@
                     <longitud>41.902137</longitud>
                 </coordenada>
                 <descripcion>Plaza que se encuentra en la cCudad del Vaticano</descripcion>
-                <distancia>0.8</distancia>
+                <distancia unidades="kilometros">0.8</distancia>
                 <galeria>https://www.101viajes.com/sites/default/files/plaza-san-pedro.jpg</galeria>
                 <sitio>Piazza San Pietro</sitio>
             </hito>
@@ -263,7 +259,6 @@
                     <longitud>48.858916</longitud>
                 </coordenada>
                 <descripcion>Gran monumento muy tipico de Paris</descripcion>
-                <distancia>0.0</distancia>
                 <galeria></galeria>
                 <sitio>La Torre Eiffel</sitio>
             </hito>
@@ -274,7 +269,7 @@
                     <longitud>52.535383</longitud>
                 </coordenada>
                 <descripcion>Lugar donde se puede ver un poco del muro de Berlin</descripcion>
-                <distancia>733.0</distancia>
+                <distancia unidades="kilometros">733.0</distancia>
                 <galeria></galeria>
                 <sitio>Berlin Wall Memorial</sitio>
             </hito>
@@ -293,7 +288,6 @@
         <hitos>
             <hito>
                 <descripcion></descripcion>
-                <distancia>0.0</distancia>
             </hito>
         </hitos>
         <lugarInicio></lugarInicio>
