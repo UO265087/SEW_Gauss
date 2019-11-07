@@ -1,0 +1,27 @@
+<!ELEMENT rutas (ruta+)>
+        <!ELEMENT ruta (nombre, fechaInicio?, horaInicio?, duracion, agencia,
+                descripcion, adecuada, lugarInicio, direccionInicio, coordenadas,
+                referencia+, hito+)>
+        <!ATTLIST ruta tipo (Arquitectura | Gastronomica | Alcoholica) #REQUIRED>
+        <!ATTLIST ruta medioTransporte (Apie | Automovil) #REQUIRED>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT fechaInicio (#PCDATA)>
+        <!ELEMENT horaInicio (#PCDATA)>
+        <!ELEMENT duracion (#PCDATA)>
+        <!ELEMENT agencia (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT adecuada (#PCDATA)>
+        <!ELEMENT lugarInicio (#PCDATA)>
+        <!ELEMENT direccionInicio (#PCDATA)>
+        <!ELEMENT coordenadas (longitud, latitud, altitud)>
+        <!ELEMENT longitud (#PCDATA)>
+        <!ELEMENT latitud (#PCDATA)>
+        <!ELEMENT altitud (#PCDATA)>
+        <!ELEMENT recomendacion-b (#PCDATA)>
+        <!ELEMENT referencia (#PCDATA)>
+        <!ELEMENT hito (nombre, descripcion, coordenadas, fotos, videos)>
+        <!ATTLIST hito distancia CDATA #REQUIRED>
+        <!ELEMENT fotos (foto+)>
+        <!ELEMENT foto (#PCDATA)>
+        <!ELEMENT videos (video*)>
+        <!ELEMENT video (#PCDATA)>
