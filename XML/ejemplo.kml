@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Rutas</name>
+        <description>Ejemplos de rutas. Observa que la etiqueta tessellate se establece de forma predeterminada
+            en 0. Si quieres crear líneas teseladas, deben crearse
+            (o editarse) directamente en KML.
+        </description>
+        <Style id="yellowLineGreenPoly">
+            <LineStyle>
+                <color>7f00ffff</color>
+                <width>4</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>7f00ff00</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Relieve absoluto</name>
+            <description>Pared verde transparente con contornos amarillos</description>
+            <styleUrl>#yellowLineGreenPoly</styleUrl>
+            <LineString>
+                <extrude>1</extrude>
+                <tessellate>1</tessellate>
+                <altitudeMode>absoluto</altitudeMode>
+                <coordinates>
+                    -6.948601,43.565565,20
+                    -6.948501,43.567395,20
+                    -6.947690,43.568344,20
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
+</kml>
