@@ -152,33 +152,22 @@
                                     </li>
                                 </ul>
                             </xsl:for-each>
-                            <h4>Diagrama SVG</h4>
-                            <xsl:variable name="max">
-                                <xsl:for-each select="hitos/hito/coordenadas/altitud">
-                                    <xsl:sort select="." data-type="number" order="descending"/>
-                                    <xsl:if test="position() = 1">
-                                        <xsl:value-of select="."/>
-                                    </xsl:if>
-                                </xsl:for-each>
-                            </xsl:variable>
-                            <xsl:variable name="stroke-width" select="3"/>
-                            <xsl:variable name="box-height" select="100"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 {$box-height}">
-                                <polyline
-                                        fill="none"
-                                        stroke="#0074d9"
-                                        stroke-width="3">
-                                    <xsl:attribute name="points">
-                                        <xsl:for-each select="hitos/hito/coordenadas">
-                                            <xsl:variable name="altitud" select="altitud"/>
-                                            <xsl:value-of select="20 * (position())"/>
-                                            <xsl:text>,</xsl:text>
-                                            <xsl:value-of select="$altitud"/>
-                                            <xsl:text> </xsl:text>
-                                        </xsl:for-each>
-                                    </xsl:attribute>
-                                </polyline>
-                            </svg>
+                            <aside>
+                                <h4>Diagrama SVG</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 50">
+                                    <polyline style="fill:white;stroke:#520496;stroke-width:1">
+                                        <xsl:attribute name="points">
+                                            <xsl:for-each select="hitos/hito/coordenadas">
+                                                <xsl:variable name="altitud" select="altitud"/>
+                                                <xsl:value-of select="20 * (position() - 1)"/>
+                                                <xsl:text>,</xsl:text>
+                                                <xsl:value-of select="$altitud div 10"/>
+                                                <xsl:text> </xsl:text>
+                                            </xsl:for-each>
+                                        </xsl:attribute>
+                                    </polyline>
+                                </svg>
+                            </aside>
                         </section>
                     </xsl:for-each>
                 </main>
