@@ -1,0 +1,106 @@
+/* Especificidad = 1 */
+body {
+    font: 400 15px Tahoma, sans-serif;
+    line-height: 1.8;
+    color: white;
+    background: #E8CBC0;
+    background: linear-gradient(to right, lightblue, lightgreen);
+    text-align: left;
+    padding: 0 10%;
+}
+
+body header {
+    background: rgba(0, 0, 255, 0.3);
+    color: #FFF;
+    margin: 0;
+    padding: 1em;
+    textalign: center;
+    text-shadow: 2px 2px 10px darkgreen;
+
+}
+
+/* Especificidad = 1 */
+main {
+    padding: 3%;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 17px;
+
+}
+
+/* Especificidad = 1 */
+section {
+    box-shadow: 5px 5px 5px #888;
+    padding: 1.5em;
+    margin: 1em 5em 1em 5em;
+    background: white;
+    color: #000;
+
+}
+
+.etiqueta {
+    font-weight: bold;
+}
+
+/* Especificidad = 1 */
+ul {
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 17px;
+    list-style-type: circle;
+    margin: 20px;
+    padding: 30px;
+}
+
+/* Especificidad = 1 */
+h1 {
+    text-transform: uppercase;
+    padding: 50px 25px;
+    text-align: center;
+    letter-spacing: 1em;
+}
+
+
+/* unvisited link */
+/* Especificidad = 11 */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+/* Especificidad = 11 */
+a:visited {
+    color: dodgerblue;
+}
+
+/* mouse over link */
+/* Especificidad = 11 */
+a:hover {
+    color: lightcoral;
+}
+
+/* selected link */
+/* Especificidad = 11 */
+a:active {
+    color: yellow;
+}
+
+
+/* Especificidad = 1 */
+h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 25px 25px;
+    text-align: center;
+    color: deepskyblue;
+}
+
+
+/* Especificidad = 1 */
+img {
+    display: block;
+    margin: auto;
+    border-radius: 40px;
+}
+
+svg {
+    width: 100%;
+}
