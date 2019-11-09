@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+	<city id="3114711" name="Oviedo">
+		<coord lon="-5.84" lat="43.36"></coord>
+		<country>ES</country>
+		<timezone>3600</timezone>
+		<sun rise="2019-11-07T07:05:46" set="2019-11-07T17:08:17"></sun>
+	</city>
+	<temperature value="7.78" min="4.44" max="10"
+		unit="celsius"></temperature>
+	<humidity value="75" unit="%"></humidity>
+	<pressure value="1010" unit="hPa"></pressure>
+	<wind>
+		<speed value="7.7" unit="m/s" name="Moderate breeze"></speed>
+		<gusts value="14.4"></gusts>
+		<direction value="250" code="WSW" name="West-southwest"></direction>
+	</wind>
+	<clouds value="75" name="broken clouds"></clouds>
+	<visibility value="10000"></visibility>
+	<precipitation value="0.38" mode="rain" unit="1h"></precipitation>
+	<weather number="520" value="chubasco de ligera intensidad"
+		icon="09d"></weather>
+	<lastupdate value="2019-11-07T15:37:28"></lastupdate>
+</current>
