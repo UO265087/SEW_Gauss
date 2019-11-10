@@ -1,6 +1,6 @@
 package gauss.simulacro.tiempo.model;
 
-import com.sun.xml.internal.txw2.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElement;
 
 public class Wind {
 	private Speed speed;
