@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="EstoEsUnXSLT.xsl"?>
+<?xml-stylesheet type="text/xsl" href="rutas.xsl"?>
+<rutas>
+    <ruta tipo="Gastronomica">
+        <nombre>El cabritu de Laviana</nombre>
+        <transporte>A pie, en coche o como prefiera</transporte>
+        <fechaInicio>viernes 08 marzo 2019</fechaInicio>
+        <horaInicio>21:00 horas</horaInicio>
+        <duracion>3 dias</duracion>
+        <agencia>Comite de festejos de Laviana</agencia>
+        <descripcion>El mejor cabritu en les mejores sidreries de Laviana!</descripcion>
+        <adecuada>Para toda la familia</adecuada>
+        <lugarInicio>Laviana</lugarInicio>
+        <direccionInicio>SidreriaLa Nalon</direccionInicio>
+        <coordenadas>
+            <longitud>-5.562277</longitud>
+            <latitud>43.243081</latitud>
+            <altitud>321</altitud>
+        </coordenadas>
+        <referencia>https://queverdeasturias.com/laviana/eventos-gastronomicos/49200-xxxii-jornadas-gastronomicas-del-cabritu-2019-en-laviana.html</referencia>
+        <referencia>https://www.turismoasturias.es/de/descubre/gastronomia/eventos-gastronomicos/-/events-week/3916876/xxxii-jornadas-gastronomicas-del-cabritu-laviana/23-10-2019/wfpv0fltAhmV%3bjsessionid%3d8E44B7BBCCAFD70F5DF76204BBE499B7</referencia>
+        <referencia>JA JA JA, entendí las, referencias</referencia>
+        <recomendacion>10/10 lo volveria a hacer</recomendacion>
+        <hitos>
+            <hito distancia="0 metros">
+                <nombre>La Nalon</nombre>
+                <descripcion>Una sidreria tipica de Laviana</descripcion>
+                <coordenadas>
+                    <longitud>-5.56227</longitud>
+                    <latitud>43.243081</latitud>
+                    <altitud>321</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/LaNalon.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+
+            <hito distancia="500 metros">
+                <nombre>El Guaje</nombre>
+                <descripcion>Una sidreria tipica de Laviana</descripcion>
+                <coordenadas>
+                    <longitud>-5.562880</longitud>
+                    <latitud>43.240944</latitud>
+                    <altitud>319</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/ElGuaje.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+
+            <hito distancia="1500 metros">
+                <nombre>L'Albancia</nombre>
+                <descripcion>Un restaurante tipico de Laviana</descripcion>
+                <coordenadas>
+                    <longitud>-5.539482</longitud>
+                    <latitud>43.254043</latitud>
+                    <altitud>524</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/L'Albancia.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+        </hitos>
+    </ruta>
+
+
+    <ruta tipo="Gastronomica">
+        <nombre>San Martín del pinchu</nombre>
+        <transporte>A pie, en coche o como usted prefiera</transporte>
+        <duracion>3 días</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Participa en la jornada del pinchu yendo a los multiples locales que participan
+        y probando los deliciosos pinchos que ofrecen</descripcion>
+        <adecuada>Para toda la familia</adecuada>
+        <lugarInicio>San Martín del Rey Aurelio</lugarInicio>
+        <direccionInicio>Blimea, bar San Mamés</direccionInicio>
+        <coordenadas>
+            <longitud>-5.590232</longitud>
+            <latitud>43.276409</latitud>
+            <altitud>291</altitud>
+        </coordenadas>
+        <referencia>https://queverdeasturias.com/san-martin-del-rey-aurelio/eventos-gastronomicos/54119-samartin-del-pinchu-2019.html</referencia>
+        <referencia>JA JA JA, entendí las, referencias</referencia>
+        <recomendacion>10/10 lo volveria a hacer</recomendacion>
+        <hitos>
+            <hito distancia="0 metros, lugar de inicio">
+                <nombre>bar San Mamés</nombre>
+                <descripcion>un bar de Blimea, pueblo de San Martín del Rey Aurelio</descripcion>
+                <coordenadas>
+                    <longitud>-5.590232</longitud>
+                    <latitud>43.276409</latitud>
+                    <altitud>291</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/SanMames.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+
+            <hito distancia="1000 metros">
+                <nombre>Pub Tom Malory</nombre>
+                <descripcion>Un pub estilo irlandés en El Entrego, pueblo de San Martín del Rey Aurelio</descripcion>
+                <coordenadas>
+                    <longitud>-5.639465</longitud>
+                    <latitud>43.287380</latitud>
+                    <altitud>259</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/TomMalory.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+
+            <hito distancia="950 metros">
+                <nombre>cafetería La Posta</nombre>
+                <descripcion>Una cafetería/restaurante de El Entrego, pueblo de San Martín del Rey Aurelio</descripcion>
+                <coordenadas>
+                    <longitud>-5.637944</longitud>
+                    <latitud>43.287947</latitud>
+                    <altitud>260</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/LaPosta.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+        </hitos>
+    </ruta>
+
+
+    <ruta tipo="Cultural">
+        <nombre>El Descenso Folklorico del Nalon</nombre>
+        <transporte>A pie</transporte>
+        <duracion>1 día</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>La mejor fiesta del mundo, bebida en cantidad, disfraces y carrozas y mucha diversion</descripcion>
+        <adecuada>Para toda la familia</adecuada>
+        <lugarInicio>Laviana</lugarInicio>
+        <direccionInicio>Plaza del Ayuntamiento</direccionInicio>
+        <coordenadas>
+            <longitud>-5.563616</longitud>
+            <latitud>43.247144</latitud>
+            <altitud>318</altitud>
+        </coordenadas>
+        <referencia>https://www.youtube.com/watch?v=f0kdTfLxdgg</referencia>
+        <referencia>https://www.turismoasturias.es/descubre/fiestas-de-interes-turistico/descenso-folklorico-del-nalon</referencia>
+        <referencia>JA JA JA, entendí las, referencias</referencia>
+        <recomendacion>20/10 lo volveria a hacer</recomendacion>
+        <hitos>
+            <hito distancia="0 metros, lugar de inicio">
+                <nombre>Ayuntamiento de Laviana</nombre>
+                <descripcion>se reunen todas las carrozas para la salida</descripcion>
+                <coordenadas>
+                    <longitud>-5.563616</longitud>
+                    <latitud>43.247144</latitud>
+                    <altitud>318</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/Ayuntamiento.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+
+            <hito distancia="1000 metros">
+                <nombre>Puente La Chalana</nombre>
+                <descripcion>Sitio de parada obligatoria para cantar el chalaneru</descripcion>
+                <coordenadas>
+                    <longitud>-5.555493</longitud>
+                    <latitud>43.238361</latitud>
+                    <altitud>330</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/LaChalanaDescenso.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+
+            <hito distancia="1500 metros">
+                <nombre>Puente D'Arcu</nombre>
+                <descripcion>Lugar donde las carrozas entran al rio</descripcion>
+                <coordenadas>
+                    <longitud>-5.544538</longitud>
+                    <latitud>43.238022</latitud>
+                    <altitud>328</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/PuenteD'ArcuDescenso.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta tipo="Gastronomica">
+        <nombre>Los pimientos de Blimea</nombre>
+        <transporte>A pie, en coche, como prefieras</transporte>
+        <duracion>3 días</duracion>
+        <agencia>Comité de festejos de san martín del rey aurelio</agencia>
+        <descripcion>Disfruta de unos pimientos rellenos exquisitos en los distintos restaurantes y chigres de Blimea</descripcion>
+        <adecuada>Para toda la familia</adecuada>
+        <lugarInicio>Blimea</lugarInicio>
+        <direccionInicio>Bar San Mamés</direccionInicio>
+        <coordenadas>
+            <longitud>-5.590310</longitud>
+            <latitud>43.276479</latitud>
+            <altitud>293</altitud>
+        </coordenadas>
+        <referencia>https://www.turismoasturias.es/descubre/fiestas-de-interes-turistico/fiesta-de-los-pimientos-de-blimea</referencia>
+        <referencia>https://www.lne.es/cuencas/2018/12/03/blimea-celebra-pimientos-rellenos-jueves/2390730.html</referencia>
+        <referencia>Jas</referencia>
+        <recomendacion>10/10 lo volveria a hacer</recomendacion>
+        <hitos>
+            <hito distancia="0 metros, lugar de inicio">
+                <nombre>Bar San Mamés</nombre>
+                <descripcion>Un bar/sidreria tipA JA JA, entendí las, referenciico de Blimea</descripcion>
+                <coordenadas>
+                    <longitud>-5.590310</longitud>
+                    <latitud>43.276479</latitud>
+                    <altitud>293</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/SanMames.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+            <hito distancia = "100 metros">
+                <nombre>Sidreria El Crespo's</nombre>
+                <descripcion>Una sidreria tipica de Blimea</descripcion>
+                <coordenadas>
+                    <longitud>-5.591781</longitud>
+                    <latitud>43.276047</latitud>
+                    <altitud>288</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/Crespo's.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+            <hito distancia="500 metros">
+                <nombre>Bar Pepe Luis</nombre>
+                <descripcion>Un bar tipico de Blimea</descripcion>
+                <coordenadas>
+                    <longitud>-5.595132</longitud>
+                    <latitud>43.259549</latitud>
+                    <altitud>453</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/BarPepeLuis.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta tipo="Musical">
+        <nombre>Gira el Azogue de Marea</nombre>
+        <transporte>Coche</transporte>
+        <duracion>Cada concierto dura 3 horas</duracion>
+        <agencia>ticketmaster.com</agencia>
+        <descripcion>El concierto del grupo de rock Marea por el lanzamiento de su nuevo disco "El Azogue"</descripcion>
+        <adecuada>para toda la familia</adecuada>
+        <lugarInicio>Madrid</lugarInicio>
+        <direccionInicio>Estadio Wanda Metropolitano</direccionInicio>
+        <coordenadas>
+            <longitud>-3.599554</longitud>
+            <latitud>40.436254</latitud>
+            <altitud>681</altitud>
+        </coordenadas>
+        <referencia>https://losmarea.com</referencia>
+        <referencia>https://www.wegow.com/es-es/artistas/marea</referencia>
+        <referencia>JA JA JA entendí las referencias</referencia>
+        <recomendacion>El mejor concierto de la historia</recomendacion>
+        <hitos>
+            <hito distancia="0 metros, lugar de inicio">
+                <nombre>Wanda Metropolitano</nombre>
+                <descripcion>El estadio de futbol del Atletico de Madrid acogerá el concierto de Marea</descripcion>
+                <coordenadas>
+                    <longitud>-3.599554</longitud>
+                    <latitud>40.436254</latitud>
+                    <altitud>681</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/WandaMetropolitano.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+            <hito distancia="20000 km">
+                <nombre>Teatro La Laboral</nombre>
+                <descripcion>Area de Gijon habilitada para el concierto de Marea</descripcion>
+                <coordenadas>
+                    <longitud>-5.621540</longitud>
+                    <latitud>43.525378</latitud>
+                    <altitud>44</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/LaLaboral.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+            <hito distancia="8500 km">
+                <nombre>Palau Sant Jordi</nombre>
+                <descripcion>El Palau Sant Jordi acogerá la gira "El Azogue"</descripcion>
+                <coordenadas>
+                    <longitud>2.152327</longitud>
+                    <latitud>41.363360</latitud>
+                    <altitud>138</altitud>
+                </coordenadas>
+                <fotos>
+                    <foto>"../Multimedia/PalauSantJordi.jpg"</foto>
+                </fotos>
+                <videos></videos>
+            </hito>
+        </hitos>
+    </ruta>
+</rutas>
