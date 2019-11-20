@@ -20,9 +20,13 @@ class Calculator {
     }
 
     result() {
-        const display = document.getElementById("pantalla");
-        display.value = eval(display.value);
-        this.memory = 0;
+        try {
+            const display = document.getElementById("pantalla");
+            display.value = eval(display.value);
+            this.memory = 0;
+        } catch (e) {
+            alert('A DONDE VAAAS JOSE LUIS');
+        }
     }
 
     addMemory() {
@@ -48,6 +52,7 @@ class Calculator {
     showMemory() {
         const display = document.getElementById("pantalla");
         display.value = this.memory;
+        this.memory = 0;
     }
 }
 
