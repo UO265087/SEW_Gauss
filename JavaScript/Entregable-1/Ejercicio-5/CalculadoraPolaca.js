@@ -3,7 +3,6 @@
 class CalculatorPolish {
     constructor() {
         this.stack = [];
-        this.isOperable = false;
     }
 
     display(digit) {
@@ -16,26 +15,22 @@ class CalculatorPolish {
     }
 
     operationAdd(operation) {
-        if (this.isOperable === true && this.stack.length === 2) {
+        if (this.stack.length >= 2) {
             const left = this.stack.pop();
             const right = this.stack.pop();
             const result = eval(right + operation + left);
             this.stack.push(result);
             document.getElementById("resultado").value = result;
-            this.isOperable = false;
         } else {
             alert('A DONDE VASS');
         }
     }
 
     operationAddNumber(number) {
-        if (Number.isNaN(number) || this.isOperable) {
+        if (Number.isNaN(number)) {
             alert('no es un digito jose LUISSSS');
         } else {
             this.stack.push(number);
-            if (this.stack.length === 2) {
-                this.isOperable = true;
-            }
         }
     }
 
