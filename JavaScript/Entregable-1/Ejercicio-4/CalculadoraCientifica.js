@@ -135,69 +135,16 @@ class ScientificCalculator extends Calculator {
         this.actualizarPantalla();
     }
 
-    template(fun){
+    powY() {
         this.guardarPantalla();
-        fun();
-        this.actualizarPantalla();
+        let y = prompt('Indique el número al cual quiere elevar', '2');
+        if (isNaN(Number(y))) {
+            alert('El número no es válido');
+        } else {
+            this.resultado = Math.pow(this.resultado, Number(y));
+            this.actualizarPantalla();
+        }
     }
-
-    // operacion(operador) {
-    //     this.pantalla += operador;
-    //     this.actualizarPantalla();
-    // }
-    //
-    // cambiarSigno() {
-    //     if ("+" == this.pantalla.substring(0, 1)) {
-    //         this.pantalla = "-" + this.pantalla.substring(1, this.pantalla.length);
-    //     } else if ("-" == this.pantalla.substring(0, 1)) {
-    //         this.pantalla = "+" + this.pantalla.substring(1, this.pantalla.length);
-    //     } else
-    //         this.pantalla = "+" + this.pantalla.substring(0, this.pantalla.length);
-    //     this.memoriaActual = this.pantalla;
-    //     this.actualizarPantalla();
-    // }
-    //
-    //
-    // limpiarDisplayParte() {
-    //     this.pantalla = this.pantalla.substring(0, this.pantalla.length - 1);
-    //     this.actualizarPantalla();
-    // }
-    //
-    // calcularMath(operador) {
-    //     var aux = eval(this.pantalla);
-    //     switch (operador) {
-    //         case "e":
-    //             aux = Math.exp(aux);
-    //             break;
-    //         case "log":
-    //             aux = Math.log(aux);
-    //             break;
-    //         case "x":
-    //             aux = Math.pow(10, aux);
-    //             break;
-    //         case "y":
-    //             aux = Math.pow(aux, this.memoria);
-    //             break;
-    //         case "raiz":
-    //             aux = Math.sqrt(10, aux);
-    //             break;
-    //         case "sin":
-    //             aux = Math.sin(10, aux);
-    //             break;
-    //         case "cos":
-    //             aux = Math.cos(10, aux);
-    //             break;
-    //         case "tan":
-    //             aux = Math.tan(10, aux);
-    //             break;
-    //         case "2":
-    //             aux = Math.pow(aux, 2);
-    //             break;
-    //     }
-    //     this.pantalla = aux;
-    //     this.memoriaActual = this.pantalla;
-    //     this.actualizarPantalla();
-    // }
 }
 
 let calculator = new ScientificCalculator();
