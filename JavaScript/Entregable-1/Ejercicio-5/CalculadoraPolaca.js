@@ -29,13 +29,13 @@ class CalculatorPolish {
     }
 
     operationAddNumber(number) {
-        if (!Number.isNaN(number) && !this.isOperable) {
+        if (Number.isNaN(number) || this.isOperable) {
+            alert('no es un digito jose LUISSSS');
+        } else {
             this.stack.push(number);
             if (this.stack.length === 2) {
                 this.isOperable = true;
             }
-        } else {
-            alert('no es un digito jose LUISSSS');
         }
     }
 
@@ -47,7 +47,7 @@ class CalculatorPolish {
 
     trigonometry(operator) {
         let result = 0;
-        if (this.stack.length === 1 && !this.isOperable) {
+        if (this.stack.length >= 1) {
             switch (operator) {
                 case 'sin':
                     result = Math.sin(this.stack.pop());
@@ -64,6 +64,8 @@ class CalculatorPolish {
             document.getElementById("resultado").value = result;
             this.stack.push(result);
             document.getElementById("pantalla").value = 0;
+        } else {
+            alert('Operación no definida')
         }
     }
 
