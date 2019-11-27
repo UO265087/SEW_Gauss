@@ -1,6 +1,6 @@
 "use strict";
 
-class Weather {
+class Money {
     constructor() {
         this.justiceLeague = new Map();
     }
@@ -45,4 +45,4 @@ class Weather {
     }
 }
 
-let weather = new Weather();
+let money = new Money();
