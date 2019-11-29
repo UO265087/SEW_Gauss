@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Iván González Mahagamage"/>
+    <meta name="description"
+          content="Ejercicio 1 de la práctica 07 asignatura Software y Estándares para la Web"/>
+    <meta name="keywords" content="SEW,Práctica07,ejercicio1,Software,Estándares,Web"/>
+    <title>Práctica 07 | Software y Estándares para la Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <h1>Ejercicio 1 - Práctica 07 </h1>
+</header>
+<main>
+    <form>
+        <label>Tarea 1: Mostrar/ocultar elemento</label>
+        <p id="buttonGroup"></p>
+        <label>Tarea 2 : Modificar contenido html</label>
+        <p>Elemento: <select id="modificar"></select></p>
+        <p>Contenido:
+            <input type="text" id="contenido"/>
+            <input type="button" value="Modificar" onclick="pagina.modificarContenido()"/>
+        </p>
+        <label>Tarea 3: Añadir elementos html</label>
+        <p>Etiqueta: <input type="text" id="tarea3Etiqueta"/>
+            Id: <input type="text" id="tarea3Id"/>
+            Contenido: <input type="text" id="tarea3Contenido"/>
+            <input type="button" value="Añadir" onclick="pagina.agregarElemento()"/>
+        </p>
+        <label>Tarea 4: Eliminar elemento html</label>
+        <p>Elemento:
+            <select id="tarea4"></select>
+            <input type="button" value="Eliminar" onclick="pagina.eliminarElemento()"/>
+        </p>
+        <label>Tarea 5: Mostrar árbol DOM</label>
+        <input type="button" value="Mostrar" onclick="pagina.mostrarDom()"/>
+    </form>
+    <table id="myTable">
+        <thead>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="numero">1</td>
+            <td class="numero">100</td>
+        </tr>
+        <tr>
+            <td class="numero">2</td>
+            <td class="numero">80</td>
+        </tr>
+        <tr>
+            <td class="numero">3</td>
+            <td class="numero">180</td>
+        </tr>
+        </tbody>
+    </table>
+    <button onclick="pagina.sumTable()">Calcular</button>
+    <section id="result">
+
+    </section>
+</main>
+<footer>
+    <address>
+        <p>Autor: Iván González Mahagamage</p>
+        <p>Contacto: <a href="mailto:uo239795@uniovi.es">uo239795@uniovi.es</a></p>
+    </address>
+    <p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            HTML
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            CSS
+        </a>
+    </p>
+</footer>
+<script src="Ejercicio7.js"></script>
+</body>
+</html>
