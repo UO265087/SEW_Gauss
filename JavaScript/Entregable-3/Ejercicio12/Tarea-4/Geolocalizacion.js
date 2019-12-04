@@ -2,28 +2,16 @@
 
 class Geolocalizacion {
     constructor() {
-        this.map = new Map();
         this.inicializar();
     }
 
     inicializar() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
-                this.obtener.bind(this), this.errores.bind(this));
+                this.mostrar.bind(this), this.errores.bind(this));
         } else {
             alert("Geolocación no es soportada por navegador.");
         }
-    }
-
-    obtener(posicion) {
-        geolocalizacion.map.set('accuracy', posicion.coords.accuracy);
-        geolocalizacion.map.set('altitude', posicion.coords.altitude);
-        geolocalizacion.map.set('altitudeAccuracy', posicion.coords.altitudeAccuracy);
-        geolocalizacion.map.set('heading', posicion.coords.heading);
-        geolocalizacion.map.set('latitude', posicion.coords.latitude);
-        geolocalizacion.map.set('longitude', posicion.coords.longitude);
-        geolocalizacion.map.set('speed', posicion.coords.speed);
-        geolocalizacion.mostrar();
     }
 
     errores(error) {
@@ -32,12 +20,12 @@ class Geolocalizacion {
 
     mostrar() {
         const localizacion = {
-            lat: this.map.get("latitude"),
-            lng: this.map.get("longitude")
+            lat: 43.362114,
+            lng: -5.847994
         };
         const map = new google.maps.Map($('main')[0],
             {
-                zoom: 15,
+                zoom: 17,
                 center: localizacion
             }
         );
