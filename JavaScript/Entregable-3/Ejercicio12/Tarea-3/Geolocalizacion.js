@@ -32,16 +32,16 @@ class Geolocalizacion {
 
     mostrar() {
         const localizacion = {
-            lat: this.map.get("Latitud"),
-            lng: this.map.get("Longitud")
+            lat: this.map.get("latitude"),
+            lng: this.map.get("longitude")
         };
-        const map = new google.maps.Map(document.getElementsByTagName('main')[0],
+        const map = new google.maps.Map($('main')[0],
             {
                 zoom: 15,
                 center: localizacion
             }
         );
-        var marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
             position: localizacion,
             map: map
         });
