@@ -27,6 +27,10 @@ main {
     margin: 0 auto;
     padding: 2.5%;
     width: 100%;
+    background: -webkit-linear-gradient(white, white);
+    background: -o-linear-gradient(white, white);
+    background: -moz-linear-gradient(white, white);
+    background: linear-gradient(white, white);
 }
 
 /* a=0 b=0 c=1 -> Especificidad = 1 */
@@ -40,11 +44,6 @@ h1 {
     text-align: center;
     font-weight: bold;
     font-size: 35px;
-}
-
-/* a=0 b=0 c=1 -> Especificidad = 1 */
-h2 {
-    text-align: center;
 }
 
 /* a=0 b=0 c=1 -> Especificidad = 1 */
@@ -79,6 +78,11 @@ main input:active {
 }
 
 /* a=0 b=0 c=2 -> Especificidad = 2 */
+main section {
+
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
 footer p {
     padding: 0;
     margin: 0;
@@ -104,6 +108,30 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+main table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+main th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+main th {
+    background-color: #4CAF50;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+main tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
 @media screen and (max-height: 480px) {
     /* a=0 b=0 c=1 -> Especificidad = 1 */
     body {
@@ -115,4 +143,8 @@ footer a:hover {
     footer {
         position: static;
     }
+}
+
+main {
+    height: 500px;
 }

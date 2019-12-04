@@ -30,19 +30,21 @@ class Geolocalizacion {
         alert('Error: ' + error.code + ' ' + error.message);
     }
 
-
     mostrar() {
-        const ubicacion = $('main')[0];
-        const apiKey = "&key=API_KEY";
-        const url = "https://maps.googleapis.com/maps/api/staticmap?";
-        const centro = "center=" + this.map.get('latitude') + "," + this.map.get('longitude');
-        const zoom = "&zoom=15";
-        const dimension = "&size=800x600";
-        const marcador = "&markers=color:red%7Clabel:S%7C" + this.map.get('latitude') + "," + this.map.get('longitude');
-        const sensor = "&sensor=false";
-        const imagenMapa = url + centro + zoom + dimension + marcador
-            + sensor + apiKey;
-        ubicacion.innerHTML = "<img src='" + imagenMapa + "'/>";
+        const localizacion = {
+            lat: this.map.get("latitude"),
+            lng: this.map.get("longitude")
+        };
+        const map = new google.maps.Map($('main')[0],
+            {
+                zoom: 15,
+                center: localizacion
+            }
+        );
+        const marker = new google.maps.Marker({
+            position: localizacion,
+            map: map
+        });
     }
 }
 
