@@ -5,30 +5,36 @@ class Tiempo {
         this.apikey = "47b790fd0fc41878c80c57c9846132cb";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.map = new Map();
+        this.datos = new Map();
+        this.mapa = $("#weather");
+        this.tiempo = $("#weather");
     }
 
-    modificarCiudad(ciudad) {
-        this.ciudad = ciudad;
+    modificarCiudad() {
+        this.ciudad = $("#ciudad").val();
         this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad
             + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.cargarDatos();
+    }
+
+    limpiarDatos() {
+        this.mapa.empty();
+        this.tiempo.empty();
     }
 
     cargarDatos() {
-        this.modificarCiudad($("#ciudad").val());
-        $("#mostrar").prop("disabled", false);
         $.ajax({
             dataType: "json",
             url: this.url,
             method: 'GET',
             success: (datos) => {
-                const div = $("#contenido");
-                div.empty();
-                div.prepend("<p>" + JSON.stringify(datos, null, 2) + "</p>");
-                div.prepend("<h3>JSON recibido</h3>");
+                this.limpiarDatos();
+                this.tiempo.prepend("<p>" + JSON.stringify(datos, null, 2) + "</p>");
+                this.tiempo.prepend("<h3>JSON recibido</h3>");
                 this.datos.set("Ciudad", datos.name);
                 this.datos.set("Pais", datos.sys.country);
                 this.datos.set("Latitud", datos.coord.lat);
+                this.datos.set("Longitud", datos.coord.lon);
                 this.datos.set("Temperatura", datos.main.temp + " ºC");
                 this.datos.set("Temperatura máxima", datos.main.temp_max + " ºC");
                 this.datos.set("Temperatura mínima", datos.main.temp_min + " ºC");
@@ -52,22 +58,50 @@ class Tiempo {
     }
 
     mostrarDatos() {
-        $("#contenido").append("<table>");
-        $("table").append("<th scope=\"col\" id=\"parametro\">Parámetro</th>");
-        $("table").append("<th scope=\"col\" id=\"valor\">Valor</th>");
-        var keys = Array.from(this.datos.keys());
-        for (var parametro in keys) {
-            this.agregarTabla(keys[parametro]);
+        this.tiempo.append("<table id='tablaTiempo'>");
+        const tablaTiempo = $("#tablaTiempo");
+        tablaTiempo.append("<th scope=\"col\" id=\"parametro\">Parámetro</th>");
+        tablaTiempo.append("<th scope=\"col\" id=\"valor\">Valor</th>");
+        const keys = Array.from(this.datos.keys());
+        for (const parametro in keys) {
+            this.añadirTabla(keys[parametro]);
         }
-        $("section").append("</table>");
-        $("#mostrar").prop("disabled", true);
+        this.tiempo.append("</table>");
+        new Mapa(this.datos.get("Latitud"), this.datos.get("Longitud"));
+
     }
 
-    agregarTabla(parametro) {
+    añadirTabla(parametro) {
         $("table").append("<tr>");
         $("table").append("<td headers=\"col\">" + parametro + "</td>");
         $("table").append("<td headers=\"col\">" + this.datos.get(parametro) + "</td>");
         $("table").append("</tr>");
+    }
+}
+
+class Mapa {
+    constructor(lat, lon) {
+        this.lat = lat;
+        this.lon = lon;
+        const dimension = $(window).height() - $("h1").outerHeight(true) - $("h2").outerHeight(true)
+            - $("footer").outerHeight(true);
+        $("#mapa").css("height", "" + dimension + "px");
+        this.mostrar();
+    }
+
+    mostrar() {
+        const localizacion = {
+            lat: this.lat,
+            lng: this.lon
+        };
+        const map = new google.maps.Map(document.getElementById("mapa"), {
+            zoom: 12,
+            center: localizacion
+        });
+        new google.maps.Marker({
+            position: localizacion,
+            map: map
+        });
     }
 }
 

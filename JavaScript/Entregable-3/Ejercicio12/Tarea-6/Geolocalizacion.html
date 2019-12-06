@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Iván González Mahagamage"/>
+    <meta name="description"
+          content="Ejercicio 7 de la práctica 07 asignatura Software y Estándares para la Web"/>
+    <meta name="keywords" content="SEW,Práctica07,ejercicio7,Software,Estándares,Web"/>
+    <title>Práctica 07 | Software y Estándares para la Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="Geolocalizacion.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <h1>Ejercicio 12 - JavaScript </h1>
+</header>
+<main>
+    <h2>Información del tiempo y geográfica</h2>
+    <p>
+        <label for="ciudad">Ciudad dentro de la península ibérica:</label>
+        <input type="text" id="ciudad">
+    </p>
+    <p>
+        <input type="button" value="Cargar datos" onclick="tiempo.modificarCiudad()"/>
+    </p>
+    <div id="mapa"></div>
+    <div id="weather"></div>
+</main>
+<footer>
+    <address>
+        <p>Autor: Iván González Mahagamage</p>
+        <p>Contacto: <a href="mailto:uo239795@uniovi.es">uo239795@uniovi.es</a></p>
+    </address>
+</footer>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API&callback=mapa.mostrar">
+</script>
+<script src="Geolocalizacion.js"></script>
+</body>
+</html>
