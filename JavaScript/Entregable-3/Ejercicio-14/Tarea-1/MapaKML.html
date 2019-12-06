@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mapa KML</title>
+    <meta name="description" content="Rutas en KML">
+    <meta name="author" content="Iván González Mahagamage">
+    <link href="MapaKML.css" rel="stylesheet"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API"></script>
+</head>
+<body>
+<header>
+    <h1>Google Maps KML</h1>
+</header>
+<main>
+    <section id="control">
+        <p>
+            <label for="files"></label>
+            <input type="file" id="files" onchange="map.init();">
+        </p>
+    </section>
+    <section id="map"></section>
+</main>
+<script src="geoxml3.js"></script>
+<script src="MapaKML.js"></script>
+</body>
+
+</html>

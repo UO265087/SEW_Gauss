@@ -1,0 +1,27 @@
+body {
+    font: 400 15px Tahoma, sans-serif;
+    line-height: 1.8;
+    color: #161616;
+    background-color: teal;
+}
+h1 {
+    background-color:rgb(86, 201, 82); 
+    color: #fff;
+    text-transform: uppercase;
+    padding: 40px 10px;
+    text-align: center;     
+}
+
+input{
+    margin: 10px;
+}
+
+section{
+padding: 3%;
+background: aliceblue;
+margin: 15px;
+}
+#mapa {
+    height: 500px;
+    width: 100%;
+}

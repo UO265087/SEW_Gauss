@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<kml xmlns= "http://www.opengis.net/kml/2.2 "> 
+<Document>
+<Placemark>
+<name>output4.log</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-5.848141,43.359356,0
+-5.843312,43.360402,0
+-5.843263,43.359749,0
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>
