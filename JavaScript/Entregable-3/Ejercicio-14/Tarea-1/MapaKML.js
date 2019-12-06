@@ -5,9 +5,8 @@ class MapaKML {
     }
 
     init() {
-        const archivo = this.files = document.getElementById('files').files[0];
-        const tipoXml = /^[0-9a-zA-Z]+.kml$/;
-        if (archivo.name.match(tipoXml)) {
+        const file = this.files = document.getElementById('files').files[0];
+        if (file.name.includes('.kml')) {
             const reader = new FileReader();
             reader.onload = () => {
                 const map = new google.maps.Map(document.getElementById('map'), {
@@ -16,7 +15,7 @@ class MapaKML {
                 const geoXml = new geoXML3.parser({map: map});
                 geoXml.parseKmlString(reader.result);
             };
-            reader.readAsText(archivo);
+            reader.readAsText(file);
         } else {
             alert("Error : ¡Archivo no válido!");
         }

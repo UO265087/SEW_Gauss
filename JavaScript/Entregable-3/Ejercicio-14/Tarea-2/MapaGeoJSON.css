@@ -1,27 +1,163 @@
-body {
-    font: 400 15px Tahoma, sans-serif;
-    line-height: 1.8;
-    color: #161616;
-    background-color: teal;
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+html {
+    height: 100%;
+    box-sizing: border-box;
 }
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 10em;
+    min-height: 100%;
+    font-family: Ubuntu, Tahoma, sans-serif;
+    color: #000000;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+/*noinspection ALL*/
+main {
+    margin: 0 auto;
+    padding: 2.5%;
+    width: 100%;
+    background: -webkit-linear-gradient(deepskyblue, white);
+    background: -o-linear-gradient(deepskyblue, white);
+    background: -moz-linear-gradient(deepskyblue, white);
+    background: linear-gradient(deepskyblue, white);
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
 h1 {
-    background-color:rgb(86, 201, 82); 
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: darkblue;
     color: #fff;
     text-transform: uppercase;
-    padding: 40px 10px;
-    text-align: center;     
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
 }
 
-input{
-    margin: 10px;
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+h2 {
+    text-align: center;
 }
 
-section{
-padding: 3%;
-background: aliceblue;
-margin: 15px;
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+footer {
+    padding: 1em 2em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: "Titillium Web", serif;
+    color: white;
+    background-color: black;
 }
-#mapa {
+
+/* a=0 b=0 c=2 -> Especificidad = 1 */
+main p {
+    text-align: center;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+main input {
+    border-radius: 15px;
+    color: white;
+    background-color: #3E7C90;
+    font-size: 150%;
+    text-align: center;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+main input:disabled {
+    background-color: gray;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+main label {
+    font-size: 150%;
+}
+
+/* a=0 b=1 c=2 -> Especificidad = 12 */
+main input:active {
+    background-color: lawngreen;
+    color: black;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+footer a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+footer address {
+    padding-left: 0.2em;
+    float: left;
+    width: 80%;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+footer a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+main table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+main th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+main th {
+    background-color: #4CAF50;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+main tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-height: 480px) {
+    /* a=0 b=0 c=1 -> Especificidad = 1 */
+    body {
+        position: static;
+        padding-bottom: 0;
+    }
+
+    /* a=0 b=0 c=1 -> Especificidad = 1 */
+    footer {
+        position: static;
+    }
+}
+
+#map {
+    margin-bottom: 20px;
     height: 500px;
     width: 100%;
 }
