@@ -6,7 +6,7 @@ class Tiempo {
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
         this.datos = new Map();
-        this.mapa = $("#weather");
+        this.mapa = $("#mapa");
         this.tiempo = $("#weather");
     }
 

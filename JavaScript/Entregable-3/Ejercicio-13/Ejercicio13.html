@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="author" content="Iván González Mahagamage"/>
+    <meta name="description"
+          content="Ejercicio 7 de la práctica 07 asignatura Software y Estándares para la Web"/>
+    <meta name="keywords" content="SEW,Práctica07,ejercicio7,Software,Estándares,Web"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="Ejercicio13.css"/>
+    <title>API FILE HTML5</title>
+    <script src="../jQuery.js"></script>
+</head>
+<body id="body">
+<header id="header">
+    <h1>API File: Selecionar varios archivos de la máquina cliente</h1>
+</header>
+<main>
+    <section id="control">
+        <p>
+            <label for="files"></label>
+            <input type="file" id="files" onchange="apiFile.processFiles();" multiple>
+        </p>
+    </section>
+    <section id="result"></section>
+</main>
+<script src="Ejercicio13.js"></script>
+</body>
+</html>
