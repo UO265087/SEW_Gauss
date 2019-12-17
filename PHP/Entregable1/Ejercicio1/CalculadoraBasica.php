@@ -16,20 +16,123 @@
 </header>
 <main>
     <?php
-    require 'Calculator.php';
-    $calculator = new Calculator();
+    session_start();
+
+    class CalculadoraBasica
+    {
+        private $memory;
+        private $display;
+
+        /**
+         * CalculadoraBasica constructor.
+         */
+        public function __construct()
+        {
+            $this->memory = 0;
+            $this->display = '';
+        }
+
+        /**
+         * @return string
+         */
+        public function getDisplay(): string
+        {
+            return $this->display;
+        }
+
+        public function display($digit)
+        {
+            if ($this->display === '0') {
+                $this->display = $digit;
+            } else {
+                $this->display .= $digit;
+            }
+        }
+
+        public function cleanDisplay()
+        {
+            $this->display = "0";
+        }
+
+        public function result()
+        {
+            try {
+                $this->display = eval("return $this->display;");
+                $this->memory = 0;
+            } catch (Exception $e) {
+                echo '<script>alert("A DONDE VAAAS JOSE LUIS")</script>';
+            }
+        }
+
+        public function addMemory()
+        {
+            try {
+                $this->memory += eval("return $this->display;");
+                $this->cleanDisplay();
+            } catch (Exception $e) {
+                echo '<script>alert("A DONDE VAAAS JOSE LUIS")</script>';
+            }
+        }
+
+        public function minusMemory()
+        {
+            try {
+                $this->memory -= eval("return $this->display;");
+                $this->cleanDisplay();
+            } catch (Exception $e) {
+                echo '<script>alert("A DONDE VAAAS JOSE LUIS")</script>';
+            }
+        }
+
+        public function showMemory()
+        {
+            try {
+                $this->display = $this->memory;
+                $this->memory = 0;
+            } catch (Exception $e) {
+                echo '<script>alert("A DONDE VAAAS JOSE LUIS")</script>';
+            }
+        }
+    }
+
+    if (!isset($_SESSION['calculator'])) {
+        $_SESSION['calculator'] = new CalculadoraBasica();
+    }
+    $calculator = $_SESSION['calculator'];
+
+    if ($_GET) {
+        if (isset($_GET["display"]) && "" != $_GET["display"]) {
+            switch ($_GET["display"]) {
+                case 'mrc':
+                    $calculator->showMemory();
+                    break;
+                case 'm-':
+                    $calculator->minusMemory();
+                    break;
+                case 'm+':
+                    $calculator->addMemory();
+                    break;
+                case '=':
+                    $calculator->result();
+                    break;
+                case 'C':
+                    $calculator->cleanDisplay();
+                    break;
+                default:
+                    $calculator->display($_GET["display"]);
+            }
+        }
+    }
     ?>
     <form>
         <p>
             <?php
-            echo '<input type="text" id="pantalla" value="' . $calculator->getDisplay() . '" disabled/>';
+            echo '<input type="text" id="pantalla" value="' . $calculator->getDisplay() . '" disabled/>'
             ?>
-
-        </p>
         <p>
-            <input type="submit" class="memory" value="mrc" onclick="calculator.showMemory()"/>
-            <input type="submit" class="memory" value="m-" onclick="calculator.minusMemory()"/>
-            <input type="submit" class="memory" value="m+" onclick="calculator.addMemory()"/>
+            <input type="submit" class="memory" value="mrc" name="display"/>
+            <input type="submit" class="memory" value="m-" name="display"/>
+            <input type="submit" class="memory" value="m+" name="display"/>
             <input type="submit" class="operation" value="/" name="display"/>
         </p>
         <p>
@@ -66,7 +169,5 @@
         <p>Autor: Iván González Mahagamage</p>
         <p>Contacto: <a href="mailto:uo239795@uniovi.es">uo239795@uniovi.es</a></p>
     </address>
-    <p>
-    </p>
 </footer>
 </body>
